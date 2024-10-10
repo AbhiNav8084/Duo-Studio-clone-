@@ -29,6 +29,16 @@ html, body {
     mix-blend-mode: difference;
     
 }
+#purple{
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    background-color: #EDBFFF;
+    opacity: 0;
+    display: none;
+}
 
 .main{
     background-color: #0F0D0D;
@@ -40,7 +50,9 @@ html, body {
     width: 100%;
     position: relative;
     z-index: 9;
+    padding-top: 12vw;
 }
+
 
 #nav{
     height: 55px;
@@ -49,7 +61,9 @@ html, body {
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
-
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 102;
 }
 
 #nav img{
@@ -85,7 +99,6 @@ html, body {
     font-size: 8vw;
     font-weight: 300;
     font-family:PP mori;
-    margin-top: 12vw;
     margin-left: 6vw;
 }
 
@@ -359,16 +372,42 @@ html, body {
     transform: translateY(0%) rotate(0);
 }
 
-
-
-
-
-
-
-
 .page5{
     min-height: 100vh;
     width: 100%;
     position: relative;
     z-index: 9;
+    padding: 7.8vw 3.3vw;
+    border-bottom: 2px solid #dadada;
+}
+.page5 h2{
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 3vw;
+}
+
+#box{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 2vw; */
+    border-top: 1.5px solid #dadada;
+}
+#box:nth-last-child(1){
+    border-bottom: 1.5px solid #dadada;
+}
+#box h3,h4{
+    font-size: 1.5vw;
+}
+#box .inner-box{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer{
+    height: 86vh;
+    width: 100%;
 }
