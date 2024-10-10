@@ -26,21 +26,34 @@ function init() {
 
 init()
 
+var crsr = document.querySelector(".cursor")
+// var main = document.querySelector(".main")
+
+document.addEventListener("mousemove",function(dets){
+    crsr.style.left = dets.x-3 + "px"
+    crsr.style.top = dets.y-3 + "px"
+})
+
+
+
+
+
 var tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".page1 h1",
         scroller: ".main",
         // markers:true,
-        start: "top 27%",
+        start: "top 20",
         end: "top 0",
         scrub: 3
     }
 })
 tl.to(".page1 h1", {
-    x: -100,
+    x: -1040,
 }, "anim")
 tl.to(".page1 h2", {
-    x: 100
+    x: 1280,
+    scrub:2
 }, "anim")
 tl.to(".page1 video", {
     width: "90%"
@@ -51,12 +64,27 @@ var tl2 = gsap.timeline({
         trigger: ".page1 h1",
         scroller: ".main",
         // markers:true,
-        start: "top -115%",
+        start: "top -110%",
         end: "top -120%",
         scrub: 3
     }
 })
 
-tl2.to(".main",{
+tl2.to(".main ",{
     backgroundColor:"#fff"
+},"anim")
+
+var tl3 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".page1 h1",
+        scroller: ".main",
+        // markers:true,
+        start: "top -490%",
+        end: "top -500%",
+        scrub: 3
+    }
+})
+
+tl3.to(".main",{
+    backgroundColor:"#0F0D0D"
 })
