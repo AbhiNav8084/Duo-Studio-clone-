@@ -352,13 +352,13 @@ html, body {
     right: 4%;
 }
 .elem h1{
-    font-size:7.5vw;
+    font-size:7.1vw;
     font-weight:600;
     transition: all ease-out 0.5s;
 }
 
 .text-div {
-    height: 7.5vw;
+    height: 7.7vw;
     overflow: hidden;
 }
 

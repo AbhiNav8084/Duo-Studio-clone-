@@ -117,10 +117,25 @@ h4.forEach(function(elem){
     elem.addEventListener("mouseenter",function(){
         purple.style.display = "block"
         purple.style.opacity = "1"
+        crsr.style.backgroundColor="white"
     })
     elem.addEventListener("mouseleave",function(){
         purple.style.display = "none"
         purple.style.opacity = "0"
+        crsr.style.backgroundColor="#edbfff"
     })
     
 })
+var scale = document.querySelectorAll("#nav h4,#nav img,#circle, button,.page4 h1");
+scale.forEach(function (elem) {
+    elem.addEventListener("mouseenter", function () {
+    crsr.style.scale = 2;
+    // crsr.style.trasition=1;
+    crsr.style.color = "#0F0D0D";
+    });
+    elem.addEventListener("mouseleave", function () {
+    crsr.style.scale = 1;
+    crsr.style.border = "0px solid #edbfff";
+    crsr.style.backgroundColor = "#edbfff";
+    });
+});
