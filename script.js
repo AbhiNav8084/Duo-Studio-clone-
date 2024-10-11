@@ -111,21 +111,6 @@ boxes.forEach(function(elem){
 })
 
 
-var home = document.querySelectorAll("#nav #home")
-var purple1 = document.querySelector("#purple1")
-home.forEach(function(elem){
-    elem.addEventListener("mouseenter",function(){
-        purple1.style.display = "block"
-        purple1.style.opacity = "1"
-        crsr.style.backgroundColor="white"
-    })
-    elem.addEventListener("mouseleave",function(){
-        purple1.style.display = "none"
-        purple1.style.opacity = "0"
-        crsr.style.backgroundColor="#edbfff"
-    })
-    
-})
 var work = document.querySelectorAll("#nav #work")
 var purple2 = document.querySelector("#purple2")
 work.forEach(function(elem){
