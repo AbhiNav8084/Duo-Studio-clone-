@@ -111,21 +111,69 @@ boxes.forEach(function(elem){
 })
 
 
-var h4 = document.querySelectorAll("#nav h4")
-var purple = document.querySelector("#purple")
-h4.forEach(function(elem){
+var home = document.querySelectorAll("#nav #home")
+var purple1 = document.querySelector("#purple1")
+home.forEach(function(elem){
     elem.addEventListener("mouseenter",function(){
-        purple.style.display = "block"
-        purple.style.opacity = "1"
+        purple1.style.display = "block"
+        purple1.style.opacity = "1"
         crsr.style.backgroundColor="white"
     })
     elem.addEventListener("mouseleave",function(){
-        purple.style.display = "none"
-        purple.style.opacity = "0"
+        purple1.style.display = "none"
+        purple1.style.opacity = "0"
         crsr.style.backgroundColor="#edbfff"
     })
     
 })
+var work = document.querySelectorAll("#nav #work")
+var purple2 = document.querySelector("#purple2")
+work.forEach(function(elem){
+    elem.addEventListener("mouseenter",function(){
+        purple2.style.display = "block"
+        purple2.style.opacity = "1"
+        crsr.style.backgroundColor="white"
+    })
+    elem.addEventListener("mouseleave",function(){
+        purple2.style.display = "none"
+        purple2.style.opacity = "0"
+        crsr.style.backgroundColor="#edbfff"
+    })
+    
+})
+
+var studio = document.querySelectorAll("#nav #studio")
+var purple3 = document.querySelector("#purple3")
+studio.forEach(function(elem){
+    elem.addEventListener("mouseenter",function(){
+        purple3.style.display = "block"
+        purple3.style.opacity = "1"
+        crsr.style.backgroundColor="white"
+    })
+    elem.addEventListener("mouseleave",function(){
+        purple3.style.display = "none"
+        purple3.style.opacity = "0"
+        crsr.style.backgroundColor="#edbfff"
+    })
+    
+})
+
+var contact = document.querySelectorAll("#nav #contact")
+var purple4 = document.querySelector("#purple4")
+contact.forEach(function(elem){
+    elem.addEventListener("mouseenter",function(){
+        purple4.style.display = "block"
+        purple4.style.opacity = "1"
+        crsr.style.backgroundColor="white"
+    })
+    elem.addEventListener("mouseleave",function(){
+        purple4.style.display = "none"
+        purple4.style.opacity = "0"
+        crsr.style.backgroundColor="#edbfff"
+    })
+    
+})
+
 var scale = document.querySelectorAll("#nav h4,#nav img,#circle, button,.page4 h1");
 scale.forEach(function (elem) {
     elem.addEventListener("mouseenter", function () {

@@ -29,7 +29,7 @@ html, body {
     mix-blend-mode: difference;
     
 }
-#purple{
+#purple1{
     height: 100vh;
     width: 100vw;
     top: 0;
@@ -38,6 +38,156 @@ html, body {
     background-color: #EDBFFF;
     opacity: 0;
     display: none;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* position: relative; */
+}
+#purple1::-webkit-scrollbar {
+    display: none;
+}
+#purple1>h3{
+    display: inline-block;
+    font-size: 20vh;
+    font-weight: 900;
+    text-transform: uppercase;
+    /* white-space: nowrap; */
+    animation-name: scroll;
+    animation-duration: 8s;
+    animation-timing-function: l;
+    animation-iteration-count: infinite;
+    margin-top: 20vw;
+    margin-right: 10vh;
+    transition: all linear 0.3s;
+    color: #000;
+}
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+#purple2{
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    background-color: #EDBFFF;
+    opacity: 0;
+    display: none;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* position: relative; */
+}
+#purple2::-webkit-scrollbar {
+    display: none;
+}
+#purple2>h3{
+    display: inline-block;
+    font-size: 20vh;
+    font-weight: 900;
+    text-transform: uppercase;
+    /* white-space: nowrap; */
+    animation-name: scroll2;
+    animation-duration: 8s;
+    animation-timing-function: l;
+    animation-iteration-count: infinite;
+    margin-top: 20vw;
+    margin-right: 10vh;
+    transition: all linear 0.3s;
+    color: #000;
+}
+@keyframes scroll2 {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+#purple3{
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    background-color: #EDBFFF;
+    opacity: 0;
+    display: none;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* position: relative; */
+}
+#purple3::-webkit-scrollbar {
+    display: none;
+}
+#purple3>h3{
+    display: inline-block;
+    font-size: 20vh;
+    font-weight: 900;
+    text-transform: uppercase;
+    /* white-space: nowrap; */
+    animation-name: scroll3;
+    animation-duration: 8s;
+    animation-timing-function: l;
+    animation-iteration-count: infinite;
+    margin-top: 20vw;
+    margin-right: 10vh;
+    transition: all linear 0.3s;
+    color: #000;
+}
+@keyframes scroll3 {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+#purple4{
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    background-color: #EDBFFF;
+    opacity: 0;
+    display: none;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* position: relative; */
+}
+#purple4::-webkit-scrollbar {
+    display: none;
+}
+#purple4>h3{
+    display: inline-block;
+    font-size: 20vh;
+    font-weight: 900;
+    text-transform: uppercase;
+    /* white-space: nowrap; */
+    animation-name: scroll4;
+    animation-duration: 8s;
+    animation-timing-function: l;
+    animation-iteration-count: infinite;
+    margin-top: 20vw;
+    margin-right: 10vh;
+    transition: all linear 0.3s;
+    color: #000;
+}
+@keyframes scroll4 {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
 }
 
 .main{
